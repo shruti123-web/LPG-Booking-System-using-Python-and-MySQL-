@@ -1,0 +1,11 @@
+->create database user;
+
+->use user;
+
+->Create table usertable(username VARCHAR(30) NOT NULL PRIMARY KEY,password VARCHAR(30));
+
+->Create table userRtable(user VARCHAR(30) NOT NULL PRIMARY KEY,password VARCHAR(30),fname VARCHAR(30),lname VARCHAR(30),city VARCHAR(20),state VARCHAR(30),mobileno VARCHAR(10));
+
+->Create table book_detail(email VARCHAR(30) NOT NULL PRIMARY KEY,prefix VARCHAR(5),fname VARCHAR(30),lname VARCHAR(30), gender VARCHAR(10), marital_s VARCHAR(15),d_o_b DATE, nationality VARCHAR(20), address VARCHAR(50), landmark VARCHAR(30), city VARCHAR(30),state VARCHAR(30),ditributer VARCHAR(30));
+
+->Create table book_stat(username VARCHAR(30) NOT NULL PRIMARY KEY, fname VARCHAR(30), lname VARCHAR(30), distributor VARCHAR(30), email VARCHAR(30), stat VARCHAR(30) DEFAULT 'Successful');
